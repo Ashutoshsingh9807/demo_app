@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+    <header class="header position-relative">
+        <div class="menu-wrapper">
+            <div class="icon-wrapper">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="text-wrapper">
+                <span class="text-uppercase">Menu</span>
+            </div>
+        </div>
+        <div class="menu-content-wrapper">
+            <div class="d-flex height-full">
+                <div class="custom-list-items">
+                    <div class="custom-list-inner-items">
+                        <a href="#">Name</a>
+                    </div>
+                    <div class="custom-list-inner-items">
+                        <a href="#">Name</a>
+                    </div>
+                    <div class="custom-list-inner-items">
+                        <a href="#">Name</a>
+                    </div>
+                    <div class="custom-list-inner-items">
+                        <a href="#">Name</a>
+                    </div>
+                    <div class="custom-list-inner-items">
+                        <a href="#">Name</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="tab-section">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Computer Vision</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Natural Language</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#self-driving-car" role="tab" aria-controls="nav-home" aria-selected="true">Self driven car</a>
+                            <a class="nav-item nav-link" id="drones-tab" data-toggle="tab" href="#drones" role="tab" aria-controls="nav-drones" aria-selected="false">Drones</a>
+                            <a class="nav-item nav-link" id="robotics-tab" data-toggle="tab" href="#robotics" role="tab" aria-controls="nav-robotics" aria-selected="false">Robotics</a>
+                            <a class="nav-item nav-link" id="arvr-tab" data-toggle="tab" href="#arvr" role="tab" aria-controls="nav-arvr" aria-selected="false">AR & VR</a>
+                            <a class="nav-item nav-link" id="retail" data-toggle="tab" href="#retail" role="tab" aria-controls="nav-retail" aria-selected="false">Retail</a>
+                            
+                        </div>
+                    </nav>  
+                    <div class="tab-pane fade show active" id="self-driving-car" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#sensor-fusion" role="tab" aria-controls="nav-home" aria-selected="true">Sensor Fusion <br>Cuboids</a>
+                                        <a class="nav-item nav-link" id="segmentation-tab" data-toggle="tab" href="#segmentation" role="tab" aria-controls="nav-drones" aria-selected="false">Sensor Fusion <br>Segmentation</a>
+                                        <a class="nav-item nav-link" id="annotation-tab" data-toggle="tab" href="#annotation" role="tab" aria-controls="nav-robotics" aria-selected="false">Video Annotation</a>
+                                     
+                                        
+                                    </div>
+                                </nav> 
+                                <div class="tab-pane mt-5 fade show active" id="sensor-fusion" role="tabpanel" aria-labelledby="sensor-fusion-tab">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-xs-12">
+                                                    <div class="card" style="width:400px">
+                                                            <div class="card-body">
+                                                              <h4 class="card-title">Jane Doe</h4>
+                                                              <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                                                              <a href="#" class="btn btn-primary">See Profile</a>
+                                                            </div>
+                                                            <img class="card-img-bottom" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+                                                          </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-12"><div class="card" style="width:400px">
+                                                    <div class="card-body">
+                                                      <h4 class="card-title">Jane Doe</h4>
+                                                      <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+                                                      <a href="#" class="btn btn-primary">See Profile</a>
+                                                    </div>
+                                                    <img class="card-img-bottom" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+                                                  </div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="segmentation" role="tabpanel" aria-labelledby="robotics-tab">segmentation</div>
+                                <div class="tab-pane fade" id="annotation" role="tabpanel" aria-labelledby="robotics-tab">Annotation</div>
+                               
+                    </div>
+                    <div class="tab-pane fade" id="drones" role="tabpanel" aria-labelledby="drones-tab">drones</div>
+                    <div class="tab-pane fade" id="robotics" role="tabpanel" aria-labelledby="robotics-tab">robotics</div>
+                    <div class="tab-pane fade" id="arvr" role="tabpanel" aria-labelledby="robotics-tab">AR & VR</div>
+                    <div class="tab-pane fade" id="retail" role="tabpanel" aria-labelledby="retail-tab">Reatil</div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">blabla</div>
+                
+            </div>
+    </section>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>

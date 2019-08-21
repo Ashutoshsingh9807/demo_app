@@ -1,0 +1,164 @@
+/*header css here */
+.header {
+    min-height: 100vh;
+}
+.menu-wrapper {
+    background-color: #313bd0;
+    color: #fff;
+    width: 56px;
+    height: 350px;
+    position: fixed;
+    top: 30%;
+    left: 100px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius:5px;
+    transition-duration: 0.5s;
+    z-index: 99;
+}
+.text-wrapper {
+    position: absolute;
+    bottom: 0px;
+    transform: rotate(-90deg);
+    left: 50%;
+    transform-origin: 0 50%;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: transform .3s ease .4s,opacity .3s ease .4s;
+}
+.icon-wrapper span {
+    height: 4px;
+    background-color: #fff;
+    display: flex;
+    width: 30px;
+    margin: 0 auto;
+    margin-top: 6px;
+    transition-duration: 0.5s;
+}
+.icon-wrapper span:first-of-type {
+    transition-duration: 0s;
+}
+.menu-wrapper.toggle-me {
+    height:47px;
+    background-color: #95e7e4;
+}
+.menu-wrapper.toggle-me .text-wrapper {
+    top:-100px;
+    visibility: hidden;
+}
+.toggle-me .icon-wrapper span:first-of-type {
+    visibility: hidden;
+}
+.toggle-me .icon-wrapper span {
+    background-color:#313bd0;
+}
+.toggle-me .icon-wrapper span:nth-of-type(2) {
+    transform: rotate(45deg);
+}
+.toggle-me .icon-wrapper span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    bottom: 10px;
+    position: relative;
+}
+.menu-content-wrapper {
+    background-color:#313bd0;
+    position: absolute;
+    height:100%;
+    left:0px;
+    width:0px;
+    top:0px;
+    transition-duration: 0.4s;
+    visibility: hidden;
+}
+.menu-content-wrapper.toggle-menu {
+    width:100%;
+    visibility: visible;
+}
+.custom-list-items {
+    display: grid;
+    height: 66.25%;
+    order: 1;
+    grid-template-areas: ". n1 n1 n1 n1 n2 n2 n2 n2 n2 n2 . " ". . . n3 n3 n3 n3 n4 n4 n4 n4 n4" "n5 n5 n5 n5 n5 n5 n6 n6 n6 n6 . . " ". . . . n7 n7 n7 n7 n7 n7 n7 n7";
+    grid-auto-rows: auto;
+    width:100%;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.height-full {
+    height:100%;
+}
+.custom-list-inner-items {
+    width: calc(100% - -2px);
+    height: calc(100% - -2px);
+    border: 2px solid #22e0d7;
+}
+.custom-list-inner-items a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: transform .3s cubic-bezier(.785,.135,.15,.86),background-color .3s cubic-bezier(.785,.135,.15,.86),color .3s cubic-bezier(.785,.135,.15,.86),-webkit-transform .3s cubic-bezier(.785,.135,.15,.86);
+    transform: translateZ(0);
+}
+.custom-list-inner-items a:hover {
+    color: #313bd0;
+    background: #95e7e4;
+    right: 15px;
+    bottom: 15px;
+    transition: transform .5s cubic-bezier(.175,.885,.32,1.275),background-color .3s cubic-bezier(.785,.135,.15,.86),color .3s cubic-bezier(.785,.135,.15,.86),-webkit-transform .5s cubic-bezier(.175,.885,.32,1.275);
+    transform: translate3d(-8px,-12px,0);   
+
+}
+.custom-list-inner-items:first-child {
+    grid-area: n1;
+}
+.custom-list-inner-items:nth-child(2) {
+    grid-area: n2;
+}
+.custom-list-inner-items:nth-child(3) {
+    grid-area: n3;
+}
+.custom-list-inner-items:nth-child(4) {
+    grid-area: n4;
+}
+.custom-list-inner-items:nth-child(5) {
+    grid-area: n5;
+}
+/* header css ends here */
+
+
+
+.tab-section .nav {
+    align-items:center;
+    justify-content: center;
+    border: 0px;
+}
+.tab-section .nav-tabs .nav-link.active, .tab-section .nav-tabs .nav-item.show .nav-link, .tab-section .nav-tabs .nav-link:hover  {
+    border-color: transparent;
+    
+    
+}
+.tab-section .nav-tabs .nav-item.nav-link {
+    text-align: center;
+    position: relative;
+    color: #999;
+}
+.tab-section .nav-tabs .nav-link.active {
+    color:#247eff;   
+}
+.tab-section .nav-tabs .nav-link.active::after {
+    border: 6px solid transparent;
+    border-top: 6px solid #247eff;
+    content: ' ';
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    margin-left: -6px;
+    z-index: 999;
+}
