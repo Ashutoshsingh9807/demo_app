@@ -173,29 +173,22 @@
     z-index: 999999;
 }
 /*loader css */
-.loader {
-    border: 1px solid #6ba287;
-    border-radius: 50%;
-    border-top: 1px solid #fff;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
-    animation: spin 2s linear infinite;
+    .loader {
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     transition-duration: 0.5s;
-  }
+    animation-timing-function: ease-in-out;
+  } 
   .loader-hidden {
     background-color: #fff;
     z-index: 2;
   }
   .loader-hidden .loader {
-    left: 200px;
+    left: 300px;
     bottom: 22px;
     top: auto;
-    border-top: 1px solid #6ba287;
   }
   .circTxt {
     -webkit-animation: ccircle 10s infinite linear; 

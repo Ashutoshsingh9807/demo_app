@@ -7,8 +7,10 @@
     <title>Document</title>
     <link href="./css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery.classyloader.min.js"></script>
 </head>
-<body>
+<body class="overflow-hidden">
         <div class="menu-wrapper">
                 <div class="icon-wrapper">
                     <span></span>
@@ -42,7 +44,24 @@
                 </div>
     <section class="section-loader">
         <div class="container">
-            <div class="loader"></div>
+                <div class="clearfix">
+                        <canvas class="loader"></canvas>
+                        <script>
+                            $(document).ready(function() {
+                                $('.loader').ClassyLoader({
+                                    percentage: 100,
+                                    speed: 20,
+                                    fontSize: '0px',
+                                    diameter: 80,
+                                    lineColor: '#47745e',
+                                    remainingLineColor: '#fff',
+                                    lineWidth: 2
+                                });
+                            });
+                        </script>
+                        <br />
+                    </div>
+            <!-- <div class="loader"></div> -->
         </div>
     </section>
     <section class="tab-section">
@@ -126,7 +145,7 @@
         </div>  
     </section>
 
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    
     <script src="./js/main.js"></script>
     <script src="./js/bootstrap.js"></script>
 </body>
