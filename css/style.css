@@ -197,6 +197,57 @@
     top: auto;
     border-top: 1px solid #6ba287;
   }
+  .circTxt {
+    -webkit-animation: ccircle 10s infinite linear; 
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    left: 237px;
+    display: none;
+  }
+  .image-floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width:80%;
+    max-width:300px;
+  }
+  .img-dial {
+    position: absolute;
+    max-width: 263px;
+    top: 40px;
+    left: 0px;
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+  }
+  .animated-watch-text {
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
+  .img-wrapper  {
+      max-width:500px;
+  }
+  .img-wrapper:hover .circTxt {
+      display: block;
+  }
+  @-webkit-keyframes circle {
+    from {-webkit-transform: rotateZ(0deg)}
+    to {-webkit-transform: rotateZ(360deg)}
+}
+
+@-webkit-keyframes ccircle {
+    from {-webkit-transform: rotateZ(360deg)}
+    to {-webkit-transform: rotateZ(0deg)}
+}
+  @keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(-15px, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -206,3 +257,11 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+  /* @-moz-keyframes spinoffPulse {
+    0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(360deg);  }
+}
+  @-webkit-keyframes spinoffPulse {
+    0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(360deg); }
+} */
